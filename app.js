@@ -16,7 +16,7 @@ app.get('/', (req,res) => {
 });
 
 app.use((res,req,next) => {
-	console.log('first single!');
+    console.log('at /')
 	next();
 });
 

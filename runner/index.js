@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 const fav = require('./fav');
 
 router.use((res,req,next) => {
-	console.log('look at index before going anywhere else');
+	console.log('/api before allowing acces /favourites');
 	next();
 });
 

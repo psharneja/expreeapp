@@ -30,7 +30,6 @@ router.route('/')
   });
   router.route('/:id')
   .put((req,res) => {
-      console.log(req.body);
       db.forEach((obj, index) => {
                if(obj.id == req.params.id){
                 db.splice(index, 1);
