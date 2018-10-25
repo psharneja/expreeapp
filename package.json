@@ -4,12 +4,16 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-	"start": "nodemon --watch app.js --watch runner",
+    "start": "node app.js",
+    "watch": "nodemon --watch app.js --watch runner",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "body-parser": "1.17.2",
+    "cors": "2.8.3",
+    "morgan": "1.8.2"
   }
 }
