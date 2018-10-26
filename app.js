@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4000;
 
 const index = require('./runner/index.js');
 
-router.use(function(req, res, next) {
+app.use(function(req, res, next) {
 	
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
